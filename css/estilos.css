@@ -130,6 +130,42 @@ img {
     cursor: pointer;
 }
 
+.navbar-menu[popover] {
+    width: 100%;
+    margin: 0;
+    top: 6.5rem;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-menu[popover] {
+        display: flex;
+        position: static;
+        width: unset;
+        background-color: transparent;
+    }
+
+    .navbar button{
+        display: none;
+    }
+}
+
+.navbar-menu a {
+    display: block;
+    color: var(--color-white);
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.navbar-menu a:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
 /*				Header Text
 ==============================================*/
 
