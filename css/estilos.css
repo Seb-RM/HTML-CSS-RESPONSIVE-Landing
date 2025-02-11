@@ -216,3 +216,28 @@ img {
     font-size: 6rem;
     font-weight: 900;
 }
+
+/*				Features
+==============================================*/
+
+.features-content {
+    padding: 5rem 0;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.features-item i {
+    font-size: 6rem;
+}
+
+.features-item h3 {
+    color: var(--color-first);
+}
+
+@media (min-width: 992px) {
+    .features-content {
+        display: flex;
+        gap: 1rem;
+        align-items: stretch;
+    }
+}
