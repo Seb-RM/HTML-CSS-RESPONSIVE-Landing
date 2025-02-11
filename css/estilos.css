@@ -8,6 +8,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    text-decoration: none;
 }
 
 :root {
@@ -64,3 +65,60 @@ img {
     max-width: 100rem;
     margin: 0 auto;
 }
+
+/*				Header
+==============================================*/
+
+.header {
+    background-color: var(--color-black);
+    padding: 1rem;
+    color: var(--color-white);
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+
+.navbar-logo {
+    display: block;
+    color: var(--color-white);
+}
+
+.navbar-logo h2 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.navbar-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-btns a {
+    color: var(--color-light-grey);
+    font-size: 2rem;
+}
+
+.navbar-btns a:hover {
+    color: var(--color-white);
+}
+
+.navbar button {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 0.1rem solid var(--color-white);
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.7rem;
+    transition-duration: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+}
+
