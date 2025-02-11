@@ -66,6 +66,14 @@ img {
     margin: 0 auto;
 }
 
+.purple-gradiente {
+    color: transparent;
+    background: linear-gradient(to right, var(--color-first) 0%, var(--color-second) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
 /*				Header
 ==============================================*/
 
@@ -122,3 +130,53 @@ img {
     cursor: pointer;
 }
 
+/*				Header Text
+==============================================*/
+
+.header-img, .header-text {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+
+    .header-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem 0;
+    }
+
+    .header-text {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+}
+
+.header-text p {
+    margin: 0;
+}
+
+.product-slogan {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.product-name {
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+
+    .product-name {
+        font-size: 9rem;
+    }
+}
+
+.product-price  span {
+    font-size: 6rem;
+    font-weight: 900;
+}
