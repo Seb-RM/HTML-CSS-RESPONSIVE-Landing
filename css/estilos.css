@@ -395,3 +395,87 @@ img {
     }
 }
 
+/*				NewsLetter
+==============================================*/
+
+.newsletter {
+    background-image: url(../img/bg-teclado-audifono-mause-1000.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.newsletter-content {
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    gap: 5rem;
+    justify-content: end;
+}
+
+@media (min-width: 567px) {
+    .newsletter-content {
+        grid-template-rows: repeat(2, 30rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .newsletter {
+        background-image: url(../img/bg-teclado-audifono-mause.webp);
+    }
+    .newsletter-content {
+        grid-template-rows: repeat(2, 50rem);
+    }
+}
+
+.newsletter-text {
+    max-width: 40rem;
+    color: var(--color-white);
+}
+
+.newsletter-text h2 {
+    margin-bottom: 0;
+    color: var(--color-first);
+}
+
+.newsletter-form .input {
+    margin-bottom: 1rem;
+}
+
+.newsletter-form .input input {
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1rem solid var(--color-first);
+    color: var(--color-white);
+}
+
+.newsletter-form .input input:focus {
+    outline: 0.1rem solid var(--color-first);
+}
+
+.newsletter-form input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-first);
+    color: var(--color-white);
+    font-size: 2rem;
+    border: none;
+}
+
+.newsletter-form input[type="submit"]:hover {
+    background-color: #0a5f9c;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--color-first);
+    margin: 0;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: var(--color-white);
+}
+
