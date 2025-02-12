@@ -241,3 +241,50 @@ img {
         align-items: stretch;
     }
 }
+
+/*				About
+==============================================*/
+
+.about {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--color-dark) 0%)
+    , url(../img/bg-logiprox.webp);
+    background-position: right;
+    background-repeat: repeat, no-repeat;
+    background-size: 100%, 150rem;
+}
+
+.about-content  {
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    gap: 5rem;
+}
+
+.about-text {
+    grid-row: 2/3;
+    color: var(--color-white);
+}
+
+.about-text h2 {
+    font-size: 4rem;
+}
+
+.about-text p {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+@media (min-width: 992px) {
+
+    .about{
+        background-image: linear-gradient(to left, transparent 50%, var(--color-dark))
+        ,url(../img/bg-logiprox.webp);
+    }
+
+    .about-content {
+        grid-template-rows: unset;
+        grid-row: unset;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        padding: 4rem 0;
+    }
+}
